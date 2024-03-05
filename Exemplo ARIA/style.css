@@ -1,0 +1,92 @@
+/* Estilos CSS para a página */
+*{
+  margin: 0;
+  box-sizing: border-box;
+  justify-content: center;
+  justify-items: center;
+  padding: 0;
+}
+.selecao{
+  background-color: gray;
+  color: #fff;
+  padding: 15px 32px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+/* Estilos CSS para a página */
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column; /* Para centralizar verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  justify-content: center; /* Centraliza verticalmente */
+  min-height: 100vh; /* Garante que o corpo ocupe pelo menos toda a altura da tela */
+}
+
+
+#hidden1 {
+  display: none;
+}
+
+.hidden {
+  display: none;
+  background-color: #FFC107;
+}
+
+/* Estilos da figura */
+.figura {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.figura img {
+  justify-content: center;
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+/* Estilos para os containers com seções de texto */
+.container {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 50px;
+  color: #fff;
+  font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+  text-align: center;
+  font-weight: bold; /* Adicionei negrito para destacar o título */
+  margin-bottom: 10px; /* Espaço abaixo do h1 */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 200px; /* Espaço abaixo do h2 */
+}
+
+
+
+.botao {
+  background-color: #FFC107;
+  color: #fff;
+  padding: 15px 32px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Estilos para o conteúdo do site */
+.conteudo {
+  position: relative;
+  z-index: 1; /* Coloca o conteúdo na frente do vídeo */
+  text-align: center;
+  color: #fff;
+  padding: 50px;
+  margin-top: 20px; /* Espaço acima do conteúdo */
+}

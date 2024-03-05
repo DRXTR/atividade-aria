@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Página Acessível com ARIA</title>
+</head>
+<body>
+
+  <h1>Página Acessível com ARIA</h1>
+
+  <h2>Exemplo de página acessível com ARIA</h2> 
+
+  <button class="botao" id="unhide" onclick="toggleVisibility('hidden1')">Visualizar</button>
+
+<div id="hidden1">
+  <!-- Imagem-->
+  <div class="figura">
+    
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpwwqdTOACe4JDLf80FEYCPQVaT1VJ189wXw&usqp=CAU" alt="Imagem ARIA">
+
+  </div>
+
+  <!-- Containers com Seções de Texto -->
+  <div class="container">
+    <button class="botao" onclick="toggleVisibility('section1')">Mostrar/Ocultar Seção 1</button>
+    <div id="section1" class="hidden">
+      <h2>Seção 1</h2>
+      <p>Conteúdo da Seção 1...</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <button class="botao" onclick="toggleVisibility('section2')">Mostrar/Ocultar Seção 2</button>
+    <div id="section2" class="hidden">
+      <h2>Seção 2</h2>
+      <p>Conteúdo da Seção 2...</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <button class="botao" onclick="toggleVisibility('section3')">Mostrar/Ocultar Seção 3</button>
+    <div id="section3" class="hidden">
+      <h2>Seção 3</h2>
+      <p>Conteúdo da Seção 3...</p>
+    </div>
+  </div>
+
+
+  <!-- Caixa de Seleção com 5 Itens -->
+  <label  for="selecao">Selecione uma opção:</label>
+  <select class="selecao" id="selecao">
+    <option value="item1">Item 1</option>
+    <option value="item2">Item 2</option>
+    <option value="item3">Item 3</option>
+    <option value="item4">Item 4</option>
+    <option value="item5">Item 5</option>
+  </select><p>
+
+  <!-- Campo para Digitar Mensagem e Alerta para Clicar em Botão de Enviar -->
+  <label for="mensagem">Digite sua mensagem:</label><p>
+  <textarea id="mensagem" rows="4" cols="50"></textarea><p>
+  <button  class="botao" onclick="showAlert()">Enviar</button>
+
+
+  <script src="script.js"></script>
+
+</div>
+</body>
+</html>
